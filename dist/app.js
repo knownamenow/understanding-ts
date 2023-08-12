@@ -1,16 +1,13 @@
 "use strict";
-let appId = 'abc';
+const userName = 'Max';
+let age = 30;
+age = 29;
+const add = (a, b) => a + b;
+console.log(add(5, 2));
+const printOutput = output => console.log(output);
 const button = document.querySelector('button');
-function add(n1, n2) {
-    if (n1 + n2 > 0) {
-        return n1 + n2;
-    }
-    return;
-}
-function clickHandler(message) {
-    console.log(`Clicked! ${message}`);
-}
 if (button) {
-    button.addEventListener('click', clickHandler.bind(null, "You're welcome!"));
+    button.addEventListener('click', event => console.log(event));
 }
+printOutput(add(5, 2));
 //# sourceMappingURL=app.js.map
